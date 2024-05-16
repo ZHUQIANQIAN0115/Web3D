@@ -1,0 +1,759 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+/* 创建一个全屏容器 */
+.fullscreen-container {
+    display: flex;  /* 使用Flexbox */
+    justify-content: center;  /* 水平居中 */
+    align-items: center;  /* 垂直居中 */
+    height: 100vh;  /* 容器高度为视窗的100% */
+    width: 100%;  /* 宽度为100% */
+    position: relative;  /* 相对定位，可以是absolute如果你不希望滚动 */
+    top: 0;
+    left: 0;
+    overflow: hidden;  /* 隐藏溢出的内容 */
+	 background-image: url(../assets/images/cokeADT.png); /* 设置背景图片路径 */
+    background-size: cover;  /* 背景图片覆盖整个容器 */
+    background-position: center;  /* 背景图片居中显示 */
+	margin-bottom: 70px;
+}
+.fullscreen-container .typewriter h0 {
+    font-size: 70px; /* 或更大 */
+    color: wheat;
+}
+
+.typewriter {
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .25em solid wheat;
+    letter-spacing: .15em;
+	text-shadow: 2px 2px 0px black;
+    animation: 
+        typing 6s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 50%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: wheat; }
+}
+
+
+/* 设置所有.nav-link类的基本样式 */
+.nav-link {
+    background-color: #ff4500; /* 设置按钮的背景颜色 */
+    color: white; /* 设置按钮的文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+	margin-left: 2px;
+    border-radius: 5px; /* 轻微圆角 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停在.nav-link上时的样式 */
+.nav-link:hover {
+    background-color: #e63946; /* 鼠标悬停时的背景颜色变深 */
+    color: #ffffff; /* 鼠标悬停时的文字颜色，可调整 */
+}
+
+/* 当.nav-link处于激活状态时的样式 */
+.nav-link.active {
+    background-color:antiquewhite; /* 激活状态的背景颜色 */
+    color: #fff; /* 激活状态的文字颜色 */
+}
+.nav-link:focus {
+    outline: none; /* 移除焦点时的外轮廓 */
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5); /* 添加蓝色的阴影以显示焦点 */
+}
+
+.btn {
+    border-radius: 8px; /* 统一设置圆角 */
+    margin: 5px; /* 添加边距以分开按钮 */
+    transition: all 0.3s ease; /* 平滑过渡效果，使按钮在交互时更具动感 */
+    background-color:#FFB176; /* 替换 "color" 为你选择的颜色 */
+    border-color: #FFB176; /* 设置边框颜色，确保和背景色协调或相同 */
+    color: white; /* 文本颜色 */
+}
+
+/* 按钮在鼠标悬停时的样式 */
+.btn:hover {
+    background-color:#FF8345; /* 更深的背景色 */
+    border-color: #FF8345; /* 更深的边框颜色 */
+}
+
+/* 按钮禁用状态的样式 */
+.btn.disabled,
+.btn:disabled {
+    background-color:aliceblue; /* 禁用状态的背景色 */
+    border-color:aliceblue; /* 禁用状态的边框色 */
+}
+
+
+body {
+    background-color: rgba(244, 164, 96, 1.0);
+}
+
+.main_contents {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    /*font-family: cocaColaFont;*/
+}
+
+/* CSS rules for the main_text IDs */
+#main_3d_image {
+    background-image: url(../assets/images/coke538.gif);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#main_text {
+    float: right;
+    margin: 5%;
+    width: 80%;
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+.card {
+    border: 10px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 222, 173, 1.0);
+ }
+
+ .card-text {
+    font-size: 13px;
+ }
+
+.logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float:left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+		text-shadow: 2px 2px 0px wheat;
+    }
+    
+    .logo h2 {
+    font-family: cocaColaFont;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+		text-shadow: 2px 2px 0px wheat;
+    }
+    
+    .logo h3 {
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; 
+    margin-top: 140px; 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+    
+    .navbar_coca_cola {
+       background: linear-gradient(to bottom right,#28949D,#ff4500 );
+        border-width: 0px;
+        min-height: 70px;
+    }
+
+    .navbar_coca_cola .navbar-brand {
+        color: rgb(1, 1, 1);
+    }
+        
+   
+    .navbar_coca_cola .navbar-brand:hover {
+        color: wheat;
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a {
+        color: white;  
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color:black;  
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item {
+        margin-top: 0px;
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item > .active, 
+    .navbar_coca_cola .navbar-nav > .active > a:hover, 
+    .navbar_coca_cola .navbar-nav > .active > a:focus {
+        color:  #760003; /* Font color for active font */
+        background-color: #fff8dc; /* Blue color for background */
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola  .navbar-nav > li > a:focus {
+        color: green;  
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar_coca_cola  .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        outline: none !important;
+    }
+
+    .dropdown-menu {
+        text-align: -webkit-left;
+        background-color: #EEE0E5;
+        margin-top: 20px;
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #bc8f8f;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        color: #030303;
+        background-color: #EEE0E5;
+    }
+    .footer {
+        color: #030303;
+       background: linear-gradient(to bottom right,#28949D,#ff4500 );
+        height: 100px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .copyright {
+        padding-top: 8px;
+        width: 60%;
+    }
+
+    .social {
+        padding-top: 0px;
+        width: 30%;   
+    }
+
+    .fa-twitter-square:before {
+        content: "\f081";
+        color:aliceblue;
+        font-size: 1em;
+    }
+
+    .fa-github-square:before {
+        content: "\f092"; 
+        color:aliceblue;
+        font-size: 1em;
+    }
+
+    .fa-google-plus-square:before {
+        content: "\f0d4"; 
+        color:aliceblue;
+        font-size: 1em;
+    }
+
+    .fa-facebook-square:before {
+        content: "\f082";
+        color:aliceblue;
+        font-size: 1em; 
+    }
+
+@media (min-width: 576px) {
+	/* 设置所有.nav-link类的基本样式 */
+.nav-link {
+    background-color:#AFEEEE; /* 设置按钮的背景颜色 */
+    color: white; /* 设置按钮的文字颜色 */
+}
+
+/* 鼠标悬停在.nav-link上时的样式 */
+.nav-link:hover {
+    background-color:#D9F7F7; /* 鼠标悬停时的背景颜色变深 */
+    color:#000000; /* 鼠标悬停时的文字颜色，可调整 */
+}
+
+	.btn {
+    border-radius: 8px; /* 统一设置圆角 */
+    margin: 5px; /* 添加边距以分开按钮 */
+    transition: all 0.3s ease; /* 平滑过渡效果，使按钮在交互时更具动感 */
+    background-color:#83A4DD; /* 替换 "color" 为你选择的颜色 */
+    border-color: #83A4DD; /* 设置边框颜色，确保和背景色协调或相同 */
+    color: white; /* 文本颜色 */
+}
+
+/* 按钮在鼠标悬停时的样式 */
+.btn:hover {
+    background-color:#35C7EA; /* 更深的背景色 */
+    border-color: #35C7EA; /* 更深的边框颜色 */
+}
+
+/* 按钮禁用状态的样式 */
+.btn.disabled,
+.btn:disabled {
+    background-color:aliceblue; /* 禁用状态的背景色 */
+    border-color:aliceblue; /* 禁用状态的边框色 */
+}
+
+
+    body {
+        background-color: rgb(175, 238, 238);
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke538.gif);
+        background-repeat: no-repeat;
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+	.logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    float:left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+    font-family: cocaColaFont;
+    font-size: 90px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .logo h3 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+		margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; 
+    margin-top: 135px; 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+    .card {
+        border: 10px solid rgba(230, 230, 250,.5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(224, 255, 255);
+    }
+
+    .navbar_coca_cola {
+        background-color:#4682b4; background: linear-gradient(to bottom right,#B9EBFF,#4682b4 );
+        min-height: 90px;
+    }
+
+   
+    .footer {
+         background-color:#4682b4; background: linear-gradient(to bottom right,#B9EBFF,#4682b4 );
+        height: 100px;
+    }
+
+    .navbar-text > a {
+        font-size: 12px;
+
+    }
+
+    .navbar-text > p {
+        color: wheat;
+    }
+
+    .copyright {
+        padding-top: 16px;
+    }
+
+    .social {
+        padding-top: 5px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+	.nav-link {
+    background-color:#FFE4EE;/* 设置按钮的背景颜色 */
+    color: white; /* 设置按钮的文字颜色 */
+}
+
+/* 鼠标悬停在.nav-link上时的样式 */
+.nav-link:hover {
+    background-color:#D46C8E; /* 鼠标悬停时的背景颜色变深 */
+    color:#000000; /* 鼠标悬停时的文字颜色，可调整 */
+}
+		.btn {
+    border-radius: 8px; /* 统一设置圆角 */
+    margin: 5px; /* 添加边距以分开按钮 */
+    transition: all 0.3s ease; /* 平滑过渡效果，使按钮在交互时更具动感 */
+    background-color:#FFCCDD; /* 替换 "color" 为你选择的颜色 */
+    border-color: #FFCCDD; /* 设置边框颜色，确保和背景色协调或相同 */
+    color:#7F004D; /* 文本颜色 */
+}
+
+/* 按钮在鼠标悬停时的样式 */
+.btn:hover {
+    background-color:#FFE6BD; /* 更深的背景色 */
+    border-color: #FFE6BD; /* 更深的边框颜色 */
+}
+
+/* 按钮禁用状态的样式 */
+.btn.disabled,
+.btn:disabled {
+    background-color:aliceblue; /* 禁用状态的背景色 */
+    border-color:aliceblue; /* 禁用状态的边框色 */
+}
+    
+    body {
+        background-color:#FFE6E6;
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke768.gif);
+        background-repeat: no-repeat;
+        height: 363px;
+    }
+
+    .card {
+        border: 10px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(219, 112, 147);
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+  
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; 
+        font-size: 50px;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+		text-shadow: 2px 2px 0px pink;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 60px;
+        margin-top: 35px;
+        margin-bottom: -15px;
+		margin-left: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+		text-shadow: 2px 2px 0px pink;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 50px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 70px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        background: linear-gradient(to bottom right,wheat,#FF9379 ); 
+        min-height: 90px;
+    }
+
+    .footer {
+        background: linear-gradient(to bottom right,wheat,#FF9379 );
+        height: 120px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: black;
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+@media (min-width: 992px) { 
+	.nav-link {
+    background-color:#EFB8B3;/* 设置按钮的背景颜色 */
+    color: white; /* 设置按钮的文字颜色 */
+}
+
+/* 鼠标悬停在.nav-link上时的样式 */
+.nav-link:hover {
+    background-color:#D9E6E6; /* 鼠标悬停时的背景颜色变深 */
+    color:#000000; /* 鼠标悬停时的文字颜色，可调整 */
+}
+    		.btn {
+    border-radius: 8px; /* 统一设置圆角 */
+    margin: 5px; /* 添加边距以分开按钮 */
+    transition: all 0.3s ease; /* 平滑过渡效果，使按钮在交互时更具动感 */
+    background-color:#EFB8B3; /* 替换 "color" 为你选择的颜色 */
+    border-color: #EFB8B3; /* 设置边框颜色，确保和背景色协调或相同 */
+    color:#1D4855; /* 文本颜色 */
+}
+
+/* 按钮在鼠标悬停时的样式 */
+.btn:hover {
+    background-color:#649DAE; /* 更深的背景色 */
+    border-color: #649DAE; /* 更深的边框颜色 */
+}
+
+/* 按钮禁用状态的样式 */
+.btn.disabled,
+.btn:disabled {
+    background-color:aliceblue; /* 禁用状态的背景色 */
+    border-color:aliceblue; /* 禁用状态的边框色 */
+}
+    body {
+        background-color:#4E929F;
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke970.gif);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 20%;
+    }
+
+    #main_text h2 {
+        color:#489097;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color:#FF8E00;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 7px solid rgba(203, 161, 158,.7);
+        /* border-radius: .25rem;*/
+        margin-top: 30px;
+        margin-bottom: 10px;
+        background-color: rgb(224 238 238);
+    }
+
+   .logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    float:left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+    font-family: cocaColaFont;
+    font-size: 90px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .logo h3 {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; 
+    margin-top: 120px; 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+
+    .navbar_coca_cola {
+        background: linear-gradient(to bottom right,#EFB8B3,#EC6B85 );
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+         background: linear-gradient(to bottom right,#EFB8B3,#EC6B85 );
+        height: 150px;
+    }
+
+    .navbar-text > a {
+        font-size: 20px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 20px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+@media (min-width: 1200px) {   
+#main_3d_image {
+        background-image: url(../assets/images/coke1400.gif);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+}
+
