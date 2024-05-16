@@ -1,0 +1,523 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+body {
+    background-color: rgba(244, 164, 96, 1.0);
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    /*font-family: cocaColaFont;*/
+}
+
+/* CSS rules for the main_text IDs */
+#main_3d_image {
+    background-image: url(../assets/images/coke538.gif);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#main_text {
+    float: right;
+    margin: 5%;
+    width: 80%;
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 222, 173, 1.0);
+ }
+
+ .card-text {
+    font-size: 13px;
+ }
+
+.logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont;
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+    font-family: cocaColaFont;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; 
+    margin-top: 22px; 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+    
+    .navbar_coca_cola {
+        background-color: #ff4500; 
+        border-width: 0px;
+        min-height: 70px;
+    }
+
+    .navbar_coca_cola .navbar-brand {
+        color: rgb(1, 1, 1);
+    }
+        
+   
+    .navbar_coca_cola .navbar-brand:hover {
+        color: red;
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a {
+        color: white;  
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color: green;  
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item {
+        margin-top: 0px;
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item > .active, 
+    .navbar_coca_cola .navbar-nav > .active > a:hover, 
+    .navbar_coca_cola .navbar-nav > .active > a:focus {
+        color:  #760003; /* Font color for active font */
+        background-color: #fff8dc; /* Blue color for background */
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola  .navbar-nav > li > a:focus {
+        color: green;  
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar_coca_cola  .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        outline: none !important;
+    }
+
+    .dropdown-menu {
+        text-align: -webkit-left;
+        background-color: #EEE0E5;
+        margin-top: 20px;
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #bc8f8f;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        color: #030303;
+        background-color: #EEE0E5;
+    }
+    .footer {
+        color: #030303;
+        background-color: #ff4500; 
+        height: 50px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .copyright {
+        padding-top: 8px;
+        width: 60%;
+    }
+
+    .social {
+        padding-top: 0px;
+        width: 30%;   
+    }
+
+    .fa-twitter-square:before {
+        content: "\f081";
+        color: green;
+        font-size: 1em;
+    }
+
+    .fa-github-square:before {
+        content: "\f092"; 
+        color: yellow;
+        font-size: 1em;
+    }
+
+    .fa-google-plus-square:before {
+        content: "\f0d4"; 
+        color: blue;
+        font-size: 1em;
+    }
+
+    .fa-facebook-square:before {
+        content: "\f082";
+        color: red;
+        font-size: 1em; 
+    }
+
+@media (min-width: 576px) {
+
+    body {
+        background-color: rgb(175, 238, 238);
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke538.gif);
+        background-repeat: no-repeat;
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(224, 255, 255);
+    }
+
+    .navbar_coca_cola {
+        background-color:#4682b4; 
+        min-height: 90px;
+    }
+
+   
+    .footer {
+        background-color: #4682b4; 
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 12px;
+
+    }
+
+    .navbar-text > p {
+        color: wheat;
+    }
+
+    .copyright {
+        padding-top: 16px;
+    }
+
+    .social {
+        padding-top: 5px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: rgb(255, 192, 203);
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke768.gif);
+        background-repeat: no-repeat;
+        height: 363px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(219, 112, 147);
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+  
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; 
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 45px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        background-color: wheat; 
+        min-height: 90px;
+    }
+
+    .footer {
+        background-color: wheat;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: black;
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+@media (min-width: 992px) { 
+    
+    body {
+        background-color: rgb(104 131 139);
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/coke970.gif);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 20%;
+    }
+
+    #main_text h2 {
+        color:#489097;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color:#FF8E00;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(224 238 238);
+    }
+
+    .logo {
+        margin-top: 7px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont;
+        font-size: 59px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 65px;
+        margin-top: 7px;
+        margin-bottom: -25px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 6px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: -5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 65px;
+        padding-left: 12px;
+    }
+
+    .navbar_coca_cola {
+        background-color:#CDB7B5; 
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color:#CDB7B5;
+        height: 75px;
+    }
+
+    .navbar-text > a {
+        font-size: 15px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 23px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+@media (min-width: 1200px) {   
+#main_3d_image {
+        background-image: url(../assets/images/coke1400.gif);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+}
+
